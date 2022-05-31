@@ -45,7 +45,7 @@ public class Zombie : LivingEntity
 
         // 렌더러 컴포넌트는 자식 게임 오브젝트에 있으므로
         // GetComponentInChildren() 메서드 사용
-        zombieRenderer = GetComponent<Renderer>();
+        zombieRenderer = GetComponentInChildren<Renderer>();
     }
 
     // 좀비 AI의 초기 스펙을 결정하는 셋업 메서드
